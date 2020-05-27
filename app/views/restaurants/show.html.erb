@@ -4,6 +4,15 @@
 
 <p><%= @restaurant.address %></p>
 
+<p>Reviews for this restaurant</p>
 
+<ol>
+  <% @restaurant.reviews.each do |review|%>
+    <li><%= review.content %></li>
+    <%= review.rating %>
+  <% end %>
+</ol>
 
 <%= link_to 'Back to HomePage', restaurants_path %>
+<br>
+<%= link_to 'Add a review', new_restaurant_review_path(@restaurant) %>
