@@ -46,3 +46,7 @@ gem 'rails-controller-testing', group: [ :test ]
 
 # Better forms
 gem 'simple_form'
+
+# Create random data
+
+gem 'faker'
